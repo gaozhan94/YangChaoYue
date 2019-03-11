@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationStyle":"custom",
+    "navigationBarBackgroundColor": "#EDD4F5",
     "navigationBarTitleText": "锦鲤签",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   }
 }
