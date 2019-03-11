@@ -1,9 +1,147 @@
 page{
-  background: #EDD4F5;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
-image{
+.showBox{
   width: 100vw;
+  height: 80vw;
   position: fixed;
   top: 0;
-  left: 0
+  left: 0;
+  z-index: 999;
+}
+.showBox .bg{
+  width: 100%;
+}
+.showBox .cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.showBox .cover .share{
+  width: 125rpx;
+  height: 28px;
+  line-height: 28px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 26rpx;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: right;
+  padding-right: 10px;
+  position: absolute;
+  left: 20rpx;
+}
+.showBox .cover .share image{
+  width: 38rpx;
+  height: 38rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -19rpx;
+  left: 10px;
+}
+.showBox .cover .share button{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.showBox .cover .info{
+  width: 100%;
+  height: 180rpx;
+  background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.4),rgba(0,0,0,0.5));
+  padding: 20rpx;
+  box-sizing: border-box;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.showBox .cover .info .content{
+  font-size: 40rpx;
+  line-height: 80rpx;
+}
+.showBox .cover .info .content span{
+  display: inline-block;
+  font-size: 40rpx;
+  line-height: 80rpx;
+  font-weight: 600;
+  border-bottom: 1rpx solid #fff;
+}
+.showBox .cover .info .addr{
+  font-size: 26rpx;
+  line-height: 80rpx;
+}
+.showBox .cover .info .addr image{
+  width: 26rpx;
+  height: 26rpx;
+  position: relative;
+  top: 2px;
+}
+.listBox{
+  flex: 1;
+  width: 100vw;
+  height: 100vh;
+  padding:630rpx 30rpx 0;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  z-index: 998;
+}
+.listBox .theOne{
+  width: 210rpx;
+  height: 210rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  float: left;
+  margin: 20rpx 10rpx; 
+  box-shadow: 5rpx 7rpx 10rpx #ccc;
+  position: relative;
+}
+.listBox .theOne image{
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 15rpx;
+}
+.listBox .theOne .cover{
+  width: 100%;
+  height: 210rpx;
+  color: #fff;
+  background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.1),rgba(0,0,0,0.5));
+  padding:130rpx 10rpx 10rpx;
+  box-sizing: border-box;
+  border-radius: 15rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.listBox .theOne .cover .listName{
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.listBox .theOne .cover .listNum{
+  font-size: 18rpx;
+  color: #eee;
+}
+.listBox .theOne .cover .listNum image{
+  width: 20rpx;
+  height: 20rpx;
+  position: relative;
+  top: 1px;
+}
+.listBox .APP_Tip{
+  width: 690rpx;
+  font-size: 28rpx;
+  color: #ddd;
+  text-align: center;
+  position: absolute;
+  bottom: 40rpx;
 }

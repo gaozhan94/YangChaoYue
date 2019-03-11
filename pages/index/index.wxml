@@ -1,1 +1,52 @@
-<image src='../../images/banner.jpg' mode='widthFix'></image>
+<view class='showBox'>
+  <image src='../../imgs/shareImg.jpg' mode='widthFix' class='bg'></image>
+  <view class='cover'>
+    <view class='share' wx:if='{{shareBtn}}' style="top:{{systemInfo.statusBarHeight+(tabBar-30)/2}}px;">
+      <image src='../../imgs/send.png'></image>发送
+      <button open-type="share">share</button>
+    </view>
+    <view class='info'>
+      <view class='content'><span>#杨超越# 燃烧我的卡路里</span></view>
+      <view class='addr'><image src='../../imgs/addr.png'></image> 杭州·顺发和美家</view>
+    </view>
+  </view>
+</view>
+<view class='listBox'>
+  <view class='theOne'>
+    <image src='../../imgs/img1.jpg'></image>
+    <view class='cover'>
+      <view class='listName'>运势</view>
+      <view class='listNum'>今天我会瘦，你呢</view>
+    </view>
+  </view>
+  <view class='theOne'>
+    <image src='../../imgs/img2.jpg'></image>
+    <view class='cover'>
+      <view class='listName'>早安</view>
+      <view class='listNum'><image src='../../imgs/img.png'></image> 12</view>
+    </view>
+  </view>
+  <view class='theOne'>
+    <image src='../../imgs/img3.jpg'></image>
+    <view class='cover'>
+      <view class='listName'>坚持</view>
+      <view class='listNum'><image src='../../imgs/img.png'></image> 6</view>
+    </view>
+  </view>
+  <view class='theOne'>
+    <image src='../../imgs/img8.jpg'></image>
+    <view class='cover'>
+      <view class='listName'>超越护体</view>
+      <view class='listNum'><image src='../../imgs/img.png'></image> 2</view>
+    </view>
+  </view>
+  <view class='theOne'>
+    <image src='../../imgs/img7.jpg'></image>
+    <view class='cover'>
+      <view class='listName'>自定义</view>
+      <view class='listNum'><image src='../../imgs/img.png'></image> 2</view>
+    </view>
+  </view>
+
+  <view class='APP_Tip'>锦鲤签 v1.0.0</view>
+</view>
